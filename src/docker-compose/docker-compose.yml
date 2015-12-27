@@ -1,0 +1,8 @@
+web:
+  image: quintor/restclient
+  ports:
+   - "8080:8080"
+  links:
+   - restservice
+restservice:
+  image: quintor/restservice
